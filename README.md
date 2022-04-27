@@ -16,22 +16,23 @@ mini_sparkify_event_data.zip
 
 ### Estructura
 
-root
- |-- artist: string (nullable = true)
- |-- auth: string (nullable = true)
- |-- firstName: string (nullable = true)
- |-- gender: string (nullable = true)
- |-- itemInSession: long (nullable = true)
- |-- lastName: string (nullable = true)
- |-- length: double (nullable = true)
- |-- level: string (nullable = true)
- |-- location: string (nullable = true)
- |-- method: string (nullable = true)
- |-- page: string (nullable = true)
- |-- registration: long (nullable = true)
- |-- sessionId: long (nullable = true)
- |-- song: string (nullable = true)
- |-- status: long (nullable = true)
- |-- ts: long (nullable = true)
- |-- userAgent: string (nullable = true)
- |-- userId: string (nullable = true)
+```
+  artist: string - artist name
+  auth: string  - authentification method
+  firstName: string - user first name
+  gender: string - user gender
+  itemInSession: long
+  lastName: string - user last name
+  length: double - length of the song listened
+  level: string - sparkifiy user service level (paid or free)
+  location: string - location of the user
+  method: string - http service method
+  page: - user service interaction event 
+  registration: long - timestamp of user service registration 
+  sessionId: service session id
+  song: song name played by the user
+  status: - http status
+  ts: long - timestamp of user service event 
+  userAgent: - web browser used
+  userId: string - unique userid 
+```
