@@ -36,3 +36,9 @@ mini_sparkify_event_data.zip
   userAgent: - web browser used
   userId: string - unique userid 
 ```
+<ins>The dataset's features can be broken down into four categories </ins>:
+  * **User information** : userid, first name, last name, gender, location
+  * **Sparkify service information** : level, registration
+  * **User service event/interactions information** : method, iteminsession, page, status, ts, useragent, sessionid
+  * **Songs & artist informations** : artist, song, length
+  
