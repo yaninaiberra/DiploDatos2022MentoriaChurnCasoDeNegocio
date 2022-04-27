@@ -7,12 +7,15 @@ La pérdida de clientes puede ser complicada para las empresas. En este proyecto
 
 **Conjunto de datos de actividad de los usuarios de [Udacity](https://www.udacity.com/) <br>**
 
+Sparkify es un falso servicio de streaming de música inventado por Udacity. En él, los usuarios pueden escuchar música de forma gratuita (con anuncios entre canciones) o por una tarifa plana. Los usuarios pueden subir, bajar de categoría o cancelar. EL objetivo será predecir el usuario que se va a ir para ofrecerle un gran descuento antes de cancelar la suscripción.
+
 El conjunto de datos registra la información demográfica de los usuarios (por ejemplo, nombre del usuario, sexo, estado) y la actividad con la plataforma (por ejemplo, canción escuchada, tipo de evento, dispositivo utilizado) en marcas de tiempo individuales.
 
 Estos datos se utilizarán para el análisis y el entrenamiento del modelo:
 
 mini_sparkify_event_data.zip
-+ [(```mini_sparkify_event_data.zip```)](data/raw/mini_sparkify_event_data.zip): El cual contiene zipeados 543705 registros de actividad de usuarios de una plataforma de streaming de música, ésta información es ficticia y proviene de un curso de Udacity.
++ [(```mini_sparkify_event_data.zip```)](data/raw/mini_sparkify_event_data.zip): El cual contiene zipeados 543705 registros de actividad de usuarios de con la plataforma de streaming de música.
+
 
 ### Estructura
 
@@ -36,7 +39,8 @@ mini_sparkify_event_data.zip
   userAgent: - web browser used
   userId: string - unique userid 
 ```
-<ins>The dataset's features can be broken down into four categories </ins>:
+
+<ins>Los features del conjunto de datos pueden dividirse en cuatro categorías </ins>:
   * **User information** : userid, first name, last name, gender, location
   * **Sparkify service information** : level, registration
   * **User service event/interactions information** : method, iteminsession, page, status, ts, useragent, sessionid
