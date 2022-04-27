@@ -15,6 +15,7 @@ mini_sparkify_event_data.zip
 + [(```mini_sparkify_event_data.zip```)](data/raw/mini_sparkify_event_data.zip): El cual contiene zipeados 543705 registros de actividad de usuarios de una plataforma de streaming de música, ésta información es ficticia y proviene de un curso de Udacity.
 
 ### Estructura
+
 root
  |-- artist: string (nullable = true)
  |-- auth: string (nullable = true)
