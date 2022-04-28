@@ -41,7 +41,7 @@ Muestra cómo interactúa un usuario concreto con el servicio.
 - page (string): type of interaction associated with the page (NextSong, Home, Login, Cancellation Confirmation, etc.)
 - auth (string): authentication level, 4 categories (Logged In, Logged Out, Cancelled, Guest)
 - sessionId (int): a session id
-- itemInSession (int): log count in the session
+- itemInSession (int): log count in the session item id of song in session
 - method (string): HTTP request method, 2 categories (GET and PUT)
 - status (int): HTTP status code, 3 categories (200, 307 and 404)
 
