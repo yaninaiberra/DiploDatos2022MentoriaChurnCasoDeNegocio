@@ -7,7 +7,7 @@ La pérdida de clientes puede ser complicada para las empresas. En este proyecto
 
 **Conjunto de datos de actividad de los usuarios de [Udacity](https://www.udacity.com/) <br>**
 
-Sparkify es un falso servicio de streaming de música inventado por Udacity. En él, los usuarios pueden escuchar música de forma gratuita (con anuncios entre canciones) o por una tarifa plana. Los usuarios pueden subir, bajar de categoría o cancelar. EL objetivo será predecir el usuario que se va a ir para ofrecerle un gran descuento antes de cancelar la suscripción.
+Sparkify es un falso servicio de streaming de música inventado por Udacity. En él, los usuarios pueden escuchar música de forma gratuita (con anuncios entre canciones) o por una tarifa plana. Los usuarios pueden subir, bajar de categoría o cancelar. El objetivo será predecir el usuario que se va a ir para ofrecerle un gran descuento antes de cancelar la suscripción.
 
 El conjunto de datos registra la información demográfica de los usuarios (por ejemplo, nombre del usuario, sexo, estado) y la actividad con la plataforma (por ejemplo, canción escuchada, tipo de evento, dispositivo utilizado) en marcas de tiempo individuales.
 
@@ -19,30 +19,37 @@ mini_sparkify_event_data.zip
 
 ### Estructura
 
-```
-  artist: string - artist name
-  auth: string  - authentification method
-  firstName: string - user first name
-  gender: string - user gender
-  itemInSession: long
-  lastName: string - user last name
-  length: double - length of the song listened
-  level: string - sparkifiy user service level (paid or free)
-  location: string - location of the user
-  method: string - http service method
-  page: - user service interaction event 
-  registration: long - timestamp of user service registration 
-  sessionId: service session id
-  song: song name played by the user
-  status: - http status
-  ts: long - timestamp of user service event 
-  userAgent: - web browser used
-  userId: string - unique userid 
-```
+**Información a nivel de usuario**
 
-<ins>Los features del conjunto de datos pueden dividirse en cuatro categorías </ins>:
-  * **User information** : userid, first name, last name, gender, location
-  * **Sparkify service information** : level, registration
-  * **User service event/interactions information** : method, iteminsession, page, status, ts, useragent, sessionid
-  * **Songs & artist informations** : artist, song, length
+Estas columnas contienen datos sobre los usuarios: sus nombres, sexo, ubicación, fecha de registro, navegador y nivel de cuenta (paga o gratuita).
+
+- userId (string): user’s id
+- firstName (string): user’s first name
+- lastName (string): user’s last name
+- gender (string): user’s gender, 2 categories (M and F)
+- location (string): user’s location
+- userAgent (string): agent (browser) used by the user
+- registration (int): user’s registration timestamp
+- level (string): subscription level, 2 categories (free and paid)serId: string - unique userid 
+
+
+**Información específica del uso de la plataforma**
+
+Muestra cómo interactúa un usuario concreto con el servicio.
+
+- ts (int): timestamp of the log
+- page (string): type of interaction associated with the page (NextSong, Home, Login, Cancellation Confirmation, etc.)
+- auth (string): authentication level, 4 categories (Logged In, Logged Out, Cancelled, Guest)
+- sessionId (int): a session id
+- itemInSession (int): log count in the session
+- method (string): HTTP request method, 2 categories (GET and PUT)
+- status (int): HTTP status code, 3 categories (200, 307 and 404)
+
+**Información a nivel de canción**
+
+- song (string): song name
+- artist (string): artist name
+- length (double): song’s length in seconds
+
+
   
