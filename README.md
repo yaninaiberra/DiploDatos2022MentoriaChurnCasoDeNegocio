@@ -52,4 +52,6 @@ Muestra cómo interactúa un usuario concreto con el servicio.
 - length (double): song’s length in seconds
 
 
-  
+## Notebook de ejemplo para levantar los datos:
+
+https://colab.research.google.com/drive/1KJnIeyybqc4l6FqgPZu7KXms27gNF0sl?usp=sharing
